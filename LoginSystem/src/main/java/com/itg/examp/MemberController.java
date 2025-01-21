@@ -1,19 +1,24 @@
 package com.itg.examp;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import com.itg.examp.dao.MemberDAO;
 import com.itg.examp.dto.MemberDTO;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+import jakarta.websocket.Session;
+
 @RestController
 @RequestMapping("/member")
 public class MemberController {
@@ -30,9 +35,11 @@ public class MemberController {
 		HashMap<String, Object> hm = new HashMap<>();
 		if(!ckid) {
 			hm.put("message", "아이디를 점검하세요");
+			return hm;
 		}
 		if(!ckpw) {
 			hm.put("message", "비밀번호를 점검하세요");
+			return hm;
 		}
 		int res = dao.signupMember(member);
 		if(res==1) {
@@ -51,31 +58,32 @@ public class MemberController {
 	public Map signin(HttpServletRequest request, @RequestBody Map<String,String> logindata) {
 		System.out.println(logindata);
 		HashMap<String, Object> hm = new HashMap<>();
-		//로그인 검증
-		MemberDTO member = dao.signinMember(logindata);
+		//로그인 검증	
+		MemberDTO member = dao.signinMemeber(logindata);
 		if(member!=null) {
-			HttpSession auth = request.getSession(true);
-			auth.setAttribute("mid", member.getMid());
+			HttpSession auth =  request.getSession(true);
+			auth.setAttribute("mid", member.getMid());//세션에 아이디 설정
+			//auth.getAttribute("mid");//세션에서 아이디 출력
 			hm.put("message", "로그인성공");
-			hm.put("member",member);			
+			hm.put("member", member);
 		}else {
-			hm.put("message","아이디와 비밀번호를 다시 확인하세요");
+			hm.put("message", "아이디와 비밀번호를 다시 확인 하세요");
 		}
+		return hm;		
 		
-		return hm;
-	}	
+	}
 	@GetMapping("/logout")
-	public HashMap<String,Object> signout(HttpServletRequest request, HttpServletResponse response) {
-		HttpSession auth = request.getSession();
+	public HashMap<String , Object> signout(HttpServletRequest request,HttpServletResponse response) {
+		HttpSession auth =  request.getSession();
 		HashMap<String, Object> hm = new HashMap<>();
 		hm.put("message", auth.getAttribute("mid")+ "님 로그아웃 되었습니다.");
-		auth.invalidate();
-//		response.sendRedirect("/");
-		return hm;
-	}	
+		auth.invalidate();	// 저장된 쿠키값을 무효화 한다.
+		//response.sendRedirect("/");	
+		return hm;		
+	}
 	@GetMapping("/listview")
 	public Map listView(HttpServletRequest request) {
-		HttpSession auth= request.getSession();
+		HttpSession auth = request.getSession();
 		HashMap<String, Object> hm = new HashMap<>();
 		if(auth==null) {
 			hm.put("message", "로그인을 먼저 해주세요");
@@ -83,7 +91,7 @@ public class MemberController {
 			List<MemberDTO> ll = dao.memberList();
 			System.out.println(auth.getAttribute("mid")+"님이 회원 리스트 요구");
 			hm.put("message", "리스트수신");
-			hm.put("members", ll);
+			hm.put("members", ll);			
 		}
 		return hm;
 	}
