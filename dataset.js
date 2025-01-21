@@ -26,7 +26,7 @@ class DataSet{
 
 let d1 = new DataSet("개발환경구축")//메인 타이틀 //메뉴번호
 d1.set_content("사용자의 로그인 기능을 구현하여 로그인 사용자와 비로그인 사용자에 제공 서비스를 구분한다.")//서브 타이틀
-d1.set_img(0,{imgtitle:"테스트용 이미지",imgurl:"https://drive.google.com/file/d/15xc1izHWf5dSAdUhlvh2U3DJ0Ytid_DX/view?usp=drive_link",imglog:"테스트를 위해 이미지를 업로드 해보았습니다.",sourceurl:"https://docs.google.com/document/d/1qy5oK767Mloty2rU-q1D7Ii-25vMqBqDWS-Sgn6vh38/edit?usp=drive_link"})//이미지타이틀
+d1.set_img(0,{imgtitle:"요구사항명세서 작성",imgurl:"https://docs.google.com/document/d/1tWmSKKSthH6c-ZVRYLNpawcG5pldLqCci5fyvcdu6So/edit?usp=drive_link",imglog:"작성된 요구사항",sourceurl:"https://drive.google.com/file/d/1ByVffdJIDtxmNzKoqSd9gLwfmScxr5nJ/view?usp=drive_link"})//이미지타이틀
 
 
 d1.set_content("목표 시스템 개발을 위한 적정한 언어를 선정하고 라이선스와 향후 지원사항을 참고하여 결정한다.")
