@@ -60,8 +60,8 @@
     }
 
     .top-cont img {
-      width: 100%;
-      height: 100%
+      width: 98%;
+      height: 98%
     }
 
     .bottom-cont {
@@ -76,8 +76,8 @@
 
     .top-cont img:hover {
       position: relative;
-      width: 102%;
-      height: 102%
+      width: 100%;
+      height: 100%
     }
 
     #sub_img img {
@@ -224,13 +224,14 @@
   <div id="cover"></div>
   <div id="display" style="border:3px solid orange;border-style:inset;">
     <h2 id="sub_title" style="text-align:center;margin:0.8vh 0"></h2>
-    <hr style="margin:1vw 5%;border:2px solid gray;margin-bottom:1vh">
+    <hr style="margin-top:1vw; border:2px solid gray;margin-bottom:1vh">
     <p id="sub_content" style="height:3vh;color:blue;margin:1vw 0"></p>
     <div id="sub_img" style="overflow: hidden;height:55vh"></div>
     <p id="user_fill" style="height:3vh;position:absolute;bottom:6vh"></p>
   </div>
-  <span id="display_closer" class="material-symbols-outlined" style="position:absolute;
-      top:4.9vw;right:2.8vw;font-size:2.5vw;z-index:123;cursor:pointer;display:none">
+  <span id="display_closer" class="material-symbols-outlined" 
+    style="position:absolute;
+      top:12%;right:4%;font-size:2.5vw;z-index:123;cursor:pointer;display:none">
     close
   </span>
   <span id="img_closer" class="material-symbols-outlined" style="position:absolute;display:none;line-height: 10vw;
@@ -284,7 +285,7 @@
 <script>
   function createImageUrl(thumbnail_id, w = 500, width, height,float_chk) {
     thumbnail_id=thumbnail_id.replace(`https://drive.google.com/file/d/`,"").replace("/view?usp=drive_link","")
-    return `<div class="imgcontainer" style="text-align:center;background:lightgray;${float_chk?"clear:both;":"float:left;"}${width ? ("width:" + (float_chk?100:width) + "%;") : "width:100%;"} ${height ? ("height:" + height + "vh") : "height:100%"}"><img src="https://drive.google.com/thumbnail?id=${thumbnail_id}&sz=w${w}" ></div>`
+    return `<div class="imgcontainer" style="text-align:center;${float_chk?"clear:both;":"float:left;"}${width ? ("width:" + (float_chk?100:width) + "%;") : "width:100%;"} ${height ? ("height:" + height + "vh") : "height:100%"}"><img src="https://drive.google.com/thumbnail?id=${thumbnail_id}&sz=w${w}" ></div>`
   }
   function imagePlace(inx) {
     createImageUrl($("#thum1"), "17KPamLcwRpk7yZVpjMqqaumfIBL-8R8k")
