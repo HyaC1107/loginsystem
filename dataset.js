@@ -23,10 +23,9 @@ class DataSet{
 //d1.set_img(항목별인덱스,{imgtitle:"요구사항명세",imgurl:"구글이미지주소",imglog:"이미지에대한 설명",sourceurl:"작성된 문서등 관련링크 주소"}) 
 // 항목별 인덱스는 1-1 제시항목별 입력값인 정수 인덱스 입니다. set_content 인덱스 순서와 맞아야 합니다.
 //  set_content는 입력순서별 인덱스로 0 부터 시작입니다.
-
 let d1 = new DataSet("개발환경구축")//메인 타이틀 //메뉴번호
 d1.set_content("사용자의 로그인 기능을 구현하여 로그인 사용자와 비로그인 사용자에 제공 서비스를 구분한다.")//서브 타이틀
-d1.set_img(0,{imgtitle:"요구사항명세서 작성",imgurl:"https://docs.google.com/document/d/1tWmSKKSthH6c-ZVRYLNpawcG5pldLqCci5fyvcdu6So/edit?usp=drive_link",imglog:"작성된 요구사항",sourceurl:"https://drive.google.com/file/d/1ByVffdJIDtxmNzKoqSd9gLwfmScxr5nJ/view?usp=drive_link"})//이미지타이틀
+d1.set_img(0,{imgtitle:"요구사항명세서 작성",imgurl:"https://drive.google.com/file/d/1ByVffdJIDtxmNzKoqSd9gLwfmScxr5nJ/view?usp=drive_link",imglog:"작성된 요구사항",sourceurl:"https://docs.google.com/document/d/1tWmSKKSthH6c-ZVRYLNpawcG5pldLqCci5fyvcdu6So/edit?usp=drive_link"})//이미지타이틀
 
 
 d1.set_content("목표 시스템 개발을 위한 적정한 언어를 선정하고 라이선스와 향후 지원사항을 참고하여 결정한다.")
