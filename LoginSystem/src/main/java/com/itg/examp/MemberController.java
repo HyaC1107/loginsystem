@@ -17,7 +17,7 @@ import com.itg.examp.dto.MemberDTO;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import jakarta.websocket.Session;
+//import jakarta.websocket.Session;
 
 @RestController
 @RequestMapping("/member")
