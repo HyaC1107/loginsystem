@@ -27,7 +27,7 @@ let d1 = new DataSet("개발환경구축")//메인 타이틀 //메뉴번호
 d1.set_content("사용자의 로그인 기능을 구현하여 로그인 사용자와 비로그인 사용자에 제공 서비스를 구분한다.")//서브 타이틀
 d1.set_img(0,{imgtitle:"요구사항명세서 작성",imgurl:"https://drive.google.com/file/d/1ByVffdJIDtxmNzKoqSd9gLwfmScxr5nJ/view?usp=drive_link",imglog:"작성된 요구사항",sourceurl:"https://docs.google.com/document/d/1tWmSKKSthH6c-ZVRYLNpawcG5pldLqCci5fyvcdu6So/edit?usp=drive_link"})//이미지타이틀
 d1.set_img(0,{imgtitle:"ER다이어그램 설계",imgurl:"https://drive.google.com/file/d/1EP83zfDC1Zt_UGxzl_xHBBJiCFAW9GdL/view?usp=drive_link",imglog:"ER 다이어그램",sourceurl:"https://drive.google.com/drive/folders/1waedsEZAte7v8TN055KBSps5PNo66gAa?usp=drive_link"})
-//https://drive.google.com/file/d/1EP83zfDC1Zt_UGxzl_xHBBJiCFAW9GdL/view?usp=drive_link
+
 
 d1.set_content("목표 시스템 개발을 위한 적정한 언어를 선정하고 라이선스와 향후 지원사항을 참고하여 결정한다.")
 d1.set_img(1,{imgtitle:"개발언어선정",imgurl:"https://drive.google.com/file/d/13gaf-UQFTf4NzliOTt2ufhY6KmZ-_Hs0/view?usp=drive_link",imglog:"자바언어기반 스프링프레임워크, html5, memberData file",sourceurl:"https://docs.google.com/document/d/1UvD1fZNL9yjLORwxgAW5vD6C-A_RwL1zcNan9RZqmys/edit?usp=drive_link"})//이미지타이틀
@@ -55,29 +55,38 @@ d2.set_img(0,{imgtitle:"공통 모듈 분리",imgurl:"https://drive.google.com/f
 d2.set_img(0,{imgtitle:"분리된공통모듈테스트",imgurl:"https://drive.google.com/file/d/1njVldS8OVQnJ4f3_I0qdyuI9mZLO6hcU/view?usp=drive_link",imglog:"분리된 공통 모듈 정상작동되는지 테스트",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 d2.set_img(0,{imgtitle:"공통 모듈 분리 적용",imgurl:"https://drive.google.com/file/d/1uF2q5I-glNup-o5FDeqksODawackux5W/view?usp=drive_link",imglog:"분리된 공통 모듈 적용",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 d2.set_content("테스트케이스 작성")
-d2.set_img(1,{imgtitle:"",imgurl:""})
+d2.set_img(1,{imgtitle:"테스트케이스 작성",imglog:"테스트 케이스를 작성하여 테스트준비",imgurl:"https://drive.google.com/file/d/1PUPViZjw78YOKOxJ334Z-0DgniF8gfD_/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 d2.set_content("단위테스트")
-d2.set_img(2,{imgtitle:"",imgurl:""})
+d2.set_img(2,{imgtitle:"junit 테스트 구현",imgurl:"https://drive.google.com/file/d/1WkIcwYIChQvCR7owe5ZUbFe8dkRNpbwL/view?usp=drive_link",imglog:"junit을 통해 회원가입 멤버의 아이디/비밀번호 유효성 검증 정상작동하는지 테스트 로직 설계",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d2.set_img(2,{imgtitle:"테스트 성공여부",imgurl:"https://drive.google.com/file/d/1j-KnR_Mmvw14MyOuvwBSLneXmQcZbEv2/view?usp=drive_link",imglog:"테스트 시행했을때 정상작동하는지 체크",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d2.set_img(2,{imgtitle:"테스트 출력값",imgurl:"https://drive.google.com/file/d/1_dw_aeuDBuPsS_sbSGs2BfKJpXkEFCEC/view?usp=drive_link",imglog:"테스트 했을시의 입력값, 예상 출력값, 실제 출력값표기",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 d2.set_content("테스트 결과보고서")
-d2.set_img(3,{imgtitle:"",imgurl:""})
+d2.set_img(3,{imgtitle:"테스트결과보고서",imgurl:"https://drive.google.com/file/d/1FQdGD90mqCfcFKscN0UlzS39ouLBLAbD/view?usp=drive_link",imglog:"위 테스트에 기반하여 테스트 결과 보고서 작성",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 
 d2.set_fill("사용자와 프로그램간에 인터렉티브한 로그인 세션 설정")//사용자 에필로그
 data_sets.push(d2)
 
 // menu3 =============================================================
+// d2.set_img(3,{imgtitle:"",imgurl:"",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 let d3 = new DataSet("서버프로그램구현")//메인타이틀
 d3.set_content("회원가입구현")//서브타이틀
-d3.set_img(0,{imgtitle:"",imgurl:""})
+d3.set_img(0,{imgtitle:"회원가입 페이지",imglog:"회원가입페이지 UI구현",imgurl:"https://drive.google.com/file/d/1QQ0OwKXlSF8t_LMg9wmH62DzKMjs0Env/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d3.set_img(0,{imgtitle:"signupMember",imglog:"연동된 컨트롤러에서의 signup 구현",imgurl:"https://drive.google.com/file/d/1yxK73WiWVR8sF9oLfTk62gc2zqsUVSgY/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d3.set_img(0,{imgtitle:"signupService",imglog:"서비스로직에서 유효성 점검하는 로직 구현",imgurl:"https://drive.google.com/file/d/1YENcQ3CoK1httW6k9UZCWJ9tAqwR9aFI/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d3.set_img(0,{imgtitle:"memberModel",imglog:"회원가입할 회원 MODEL설계",imgurl:"https://drive.google.com/file/d/14dCbAqbAxd28PSICkbiigx6vK0x59v82/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d3.set_img(0,{imgtitle:"signupXML",imglog:"xml파일을 통해 DB에 저장",imgurl:"https://drive.google.com/file/d/11sFawm-1TT0hdQ_H7Xcxlnovpk5YQ2hy/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 d3.set_content("회원로그인구현")
-d3.set_img(1,{imgtitle:"",imgurl:""})
+d3.set_img(1,{imgtitle:"로그인 페이지",imglog:"로그인페이지 UI구현",imgurl:"https://drive.google.com/file/d/17Y0PvVtCL1VS5OhT54jlhl67EBi8JVgm/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d3.set_img(1,{imgtitle:"로그인 로직",imglog:"컨트롤러에서 로그인 로직 구현",imgurl:"https://drive.google.com/file/d/1oDCMyVnvZqR3ttVb9iZfHojqR9tfMbf1/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d3.set_img(1,{imgtitle:"로그인 데이터 송수신",imglog:"로그인데이터(아이디, 비밀번호) 송수신하도록 구현",imgurl:"https://drive.google.com/file/d/1s2C37dSebNob1f318N8Qh3TMg7S_ehrI/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d3.set_img(1,{imgtitle:"사용자 인증",imglog:"MODEL에서 DB접근후 인증",imgurl:"https://drive.google.com/file/d/1Aj51Jrg_bh7GHpFHGFhqFV1slKQaWhoq/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d3.set_img(1,{imgtitle:"로그인 세션",imglog:"로그인 세션인가받는 코드 구현",imgurl:"https://drive.google.com/file/d/185RddzjNCd6x118U5viS82oohWgsBMrZ/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d3.set_content("회원로그아웃구현")
+d3.set_img(2,{imgtitle:"로그아웃구현",imglog:"컨트롤러에서 로그아웃 로직구현",imgurl:"https://drive.google.com/file/d/1m5g9ynOhxDuhpJ0Ha5rTw8i5wnrb59BD/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 d3.set_content("회원리스트연동")
-d3.set_img(2,{imgtitle:"",imgurl:""})
-d3.set_content("테스트케이스 작성")
-d3.set_img(3,{imgtitle:"",imgurl:""})
-d3.set_content("목오브젝트생성 및 테스트 구현")
-d3.set_img(4,{imgtitle:"",imgurl:""})
-d3.set_content("결과보고서 작성")
-d3.set_img(5,{imgtitle:"",imgurl:""})
+d3.set_img(3,{imgtitle:"회원리스트구현",imglog:"컨트롤로 수신 및 회원리스트 구현",imgurl:"https://drive.google.com/file/d/1jbzpX-Pip9aMZm9NCd1YNf07AlSwsh4y/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d3.set_img(3,{imgtitle:"세션확인",imglog:"회원리스트 세션확인",imgurl:"https://drive.google.com/file/d/1WlUbZhFnpP0H3H2GdnUnPYrfr_Y-IurA/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d3.set_img(3,{imgtitle:"회원리스트페이지구현",imglog:"로그인 후 회원리스트 보기를 클릭하여 리스트페이지 볼수있도록 ui구현",imgurl:"https://drive.google.com/file/d/1TSEHS55_Iv5x8OZIjehuyeFxDWrtLtnC/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 
 d3.set_fill("사용자와 프로그램간에 인터렉티브한 로그인 세션 설정")//사용자 에필로그
 data_sets.push(d3)
@@ -86,9 +95,11 @@ data_sets.push(d3)
 let d4 = new DataSet("배치프로그램구현")//메인타이틀
 
 d4.set_content("배치스케줄구현")//서브타이틀
-d4.set_img(0,{imgtitle:"",imgurl:""})
+d4.set_img(0,{imgtitle:"application.properties설정",imgurl:"https://drive.google.com/file/d/1PfM56onZgEj7c8Y1ztXTM-T1dTpW03uF/view?usp=drive_link",imglog:"application.properties에 batch추가",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d4.set_img(0,{imgtitle:"BatchConfiguration.java",imglog:"배치 작업 설정",imgurl:"https://drive.google.com/file/d/1ZmaSg55CqbzMYnv7eFmcUoUWuNaNPsmN/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d4.set_img(0,{imgtitle:"BatchSchedule.java",imglog:"배치프로그램을 스케줄이용해 5분마다 실행하도록 성정",imgurl:"https://drive.google.com/file/d/12dvYccM03dM4L5fss-tiOnBdKi-75wRh/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 d4.set_content("배치프로그램테스트 구현")
-d4.set_img(1,{imgtitle:"",imgurl:""})
+d4.set_img(1,{imgtitle:"배치프로그램 테스트",imglog:"5분마다 배치프로그램이 정상작동되는지 테스트한 콘솔내용",imgurl:"https://drive.google.com/file/d/1Aqm9RCAcowefz5MLtdMWEuSuvkIj4yxP/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 
-d4.set_fill("사용자와 프로그램간에 인터렉티브한 로그인 세션 설정")//사용자 에필로그
+d4.set_fill("배치프로그램을 통해 정해진 시간마다 일괄적인 요청을 처리하도록 설정")
 data_sets.push(d4)
