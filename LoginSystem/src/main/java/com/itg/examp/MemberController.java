@@ -64,6 +64,7 @@ public class MemberController {
 			HttpSession auth =  request.getSession(true);
 			auth.setAttribute("mid", member.getMid());//세션에 아이디 설정
 			//auth.getAttribute("mid");//세션에서 아이디 출력
+			System.out.println(auth.getAttribute("mid")+"님이 로그인");
 			hm.put("message", "로그인성공");
 			hm.put("member", member);
 		}else {
@@ -77,6 +78,7 @@ public class MemberController {
 		HttpSession auth =  request.getSession();
 		HashMap<String, Object> hm = new HashMap<>();
 		hm.put("message", auth.getAttribute("mid")+ "님 로그아웃 되었습니다.");
+		System.out.println(auth.getAttribute("mid")+"님이 로그아웃");
 		auth.invalidate();	// 저장된 쿠키값을 무효화 한다.
 		//response.sendRedirect("/");	
 		return hm;		

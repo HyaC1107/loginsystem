@@ -30,9 +30,12 @@ d1.set_img(0,{imgtitle:"ER다이어그램 설계",imgurl:"https://drive.google.c
 
 
 d1.set_content("목표 시스템 개발을 위한 적정한 언어를 선정하고 라이선스와 향후 지원사항을 참고하여 결정한다.")
-d1.set_img(1,{imgtitle:"개발언어선정",imgurl:"https://drive.google.com/file/d/13gaf-UQFTf4NzliOTt2ufhY6KmZ-_Hs0/view?usp=drive_link",imglog:"자바언어기반 스프링프레임워크, html5, memberData file",sourceurl:"https://docs.google.com/document/d/1UvD1fZNL9yjLORwxgAW5vD6C-A_RwL1zcNan9RZqmys/edit?usp=drive_link"})//이미지타이틀
+d1.set_img(1,{imgtitle:"개발언어선정",imgurl:"https://drive.google.com/file/d/1pkM918IhEfsK4-HEauQOc5iykCRa3QOw/view?usp=drive_link",imglog:"자바언어기반 스프링프레임워크, html5, memberData file",sourceurl:"https://docs.google.com/document/d/1UvD1fZNL9yjLORwxgAW5vD6C-A_RwL1zcNan9RZqmys/edit?usp=drive_link"})//이미지타이틀
+d1.set_img(1,{imgtitle:"open JDK",imgurl:"https://drive.google.com/file/d/119aGrjpD8KCH4ZEC-q3uY7ZCKuQgrKOB/view?usp=drive_link",imglog:"open JDK 23.0.1",sourceurl:"https://github.com/HyaC1107/loginsystem"})//이미지타이틀
 d1.set_img(1,{imgtitle:"스프링프레임워크",imgurl:"https://drive.google.com/file/d/1HRUQhj2Tk6AzIW_NSRD59wGUAduJYTmW/view?usp=drive_link",imglog:"오픈소스 스프링프레임워크 v4.221",sourceurl:"https://github.com/HyaC1107/loginsystem"})//이미지타이틀
 d1.set_img(1,{imgtitle:"html,css,js",imgurl:"https://drive.google.com/file/d/1qPd3XdNiErdPFH7uZZ0VnTAsR1Wh6e0t/view?usp=drive_link",imglog:"html5, CSS, Javascript",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d1.set_img(1,{imgtitle:"Mybatis3",imgurl:"https://drive.google.com/file/d/1pTxGW6os8tBko6qDtM6imzxDA9KBk57l/view?usp=drive_link",imglog:"DB를 쉽게 다룰수 있게 해주는  프레임워크",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d1.set_img(1,{imgtitle:"mariadb 11.6.2",imgurl:"https://drive.google.com/file/d/1ye9IoTwWezRL6xiVPpC0dNcHb9wCC9vl/view?usp=drive_link",imglog:"회원정보를 저장하는 mariaDB",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 
 
 d1.set_content("코딩개발도구와 테스트 및 빌드, 패키징, 배포등 개발 전반에 대한 필요한 환경을 설정한다.")
@@ -75,14 +78,21 @@ d3.set_img(0,{imgtitle:"signupMember",imglog:"연동된 컨트롤러에서의 si
 d3.set_img(0,{imgtitle:"signupService",imglog:"서비스로직에서 유효성 점검하는 로직 구현",imgurl:"https://drive.google.com/file/d/1YENcQ3CoK1httW6k9UZCWJ9tAqwR9aFI/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 d3.set_img(0,{imgtitle:"memberModel",imglog:"회원가입할 회원 MODEL설계",imgurl:"https://drive.google.com/file/d/14dCbAqbAxd28PSICkbiigx6vK0x59v82/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 d3.set_img(0,{imgtitle:"signupXML",imglog:"xml파일을 통해 DB에 저장",imgurl:"https://drive.google.com/file/d/11sFawm-1TT0hdQ_H7Xcxlnovpk5YQ2hy/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d3.set_img(0,{imgtitle:"서버수신스냅샷",imglog:"회원가입 성공시 서버에서 성공메시지출력",imgurl:"https://drive.google.com/file/d/1OnzkICUj-F6fmFgi_NbspdSekl6QSl5N/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d3.set_img(0,{imgtitle:"회원가입성공페이지",imglog:"회원가입 성공시 클라이언트에서 결과",imgurl:"https://drive.google.com/file/d/1m4b8xctYaGaoTzcfPgyUSes095-RUXdM/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 d3.set_content("회원로그인구현")
 d3.set_img(1,{imgtitle:"로그인 페이지",imglog:"로그인페이지 UI구현",imgurl:"https://drive.google.com/file/d/17Y0PvVtCL1VS5OhT54jlhl67EBi8JVgm/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 d3.set_img(1,{imgtitle:"로그인 로직",imglog:"컨트롤러에서 로그인 로직 구현",imgurl:"https://drive.google.com/file/d/1oDCMyVnvZqR3ttVb9iZfHojqR9tfMbf1/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 d3.set_img(1,{imgtitle:"로그인 데이터 송수신",imglog:"로그인데이터(아이디, 비밀번호) 송수신하도록 구현",imgurl:"https://drive.google.com/file/d/1s2C37dSebNob1f318N8Qh3TMg7S_ehrI/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 d3.set_img(1,{imgtitle:"사용자 인증",imglog:"MODEL에서 DB접근후 인증",imgurl:"https://drive.google.com/file/d/1Aj51Jrg_bh7GHpFHGFhqFV1slKQaWhoq/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 d3.set_img(1,{imgtitle:"로그인 세션",imglog:"로그인 세션인가받는 코드 구현",imgurl:"https://drive.google.com/file/d/185RddzjNCd6x118U5viS82oohWgsBMrZ/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d3.set_img(1,{imgtitle:"로그인 서버단 스냅샷",imglog:"멤버 로그인시 서버단에서 성공메시지 출력",imgurl:"https://drive.google.com/file/d/1aIFhM7Nu4y2l9MTyu7H44nTvO3lbpMDZ/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d3.set_img(1,{imgtitle:"로그인 결과",imglog:"클라이언트단에서 로그인 성공시 화면",imgurl:"https://drive.google.com/file/d/1WLuuvIdqJvJJ1aGlXjWjBJus1_S9FmaX/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 d3.set_content("회원로그아웃구현")
 d3.set_img(2,{imgtitle:"로그아웃구현",imglog:"컨트롤러에서 로그아웃 로직구현",imgurl:"https://drive.google.com/file/d/1m5g9ynOhxDuhpJ0Ha5rTw8i5wnrb59BD/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d3.set_img(2,{imgtitle:"로그아웃버튼",imglog:"로그인 후 로그아웃 버튼 위치",imgurl:"https://drive.google.com/file/d/1kLbOPp0dsAZgpXmhNFprD3bJZqbLVkv8/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d3.set_img(2,{imgtitle:"로그아웃 서버단",imglog:"로그아웃 클릭시 서버단에서 출력메시지",imgurl:"https://drive.google.com/file/d/1l_swryBvMPpBh0eN6mVBkcx6R6tDh0L-/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
+d3.set_img(2,{imgtitle:"로그아웃",imglog:"로그아웃 클릭시 결과화면",imgurl:"https://drive.google.com/file/d/1178BkLTWtIIju09SDz4mOmHvAx_7AOj0/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 d3.set_content("회원리스트연동")
 d3.set_img(3,{imgtitle:"회원리스트구현",imglog:"컨트롤로 수신 및 회원리스트 구현",imgurl:"https://drive.google.com/file/d/1jbzpX-Pip9aMZm9NCd1YNf07AlSwsh4y/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
 d3.set_img(3,{imgtitle:"세션확인",imglog:"회원리스트 세션확인",imgurl:"https://drive.google.com/file/d/1WlUbZhFnpP0H3H2GdnUnPYrfr_Y-IurA/view?usp=drive_link",sourceurl:"https://github.com/HyaC1107/loginsystem"})
